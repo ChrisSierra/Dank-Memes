@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Raging Boner</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link href="Practice_Stylesheet.css" rel="stylesheet" type=“text/css">
+    <meta charset="UTF-8"/>
+</head>
+<body>
+
+<div id="sound-bar">
+    <div id="yeah" class="sound-box">
+        <audio id="cAudio">
+            <source src="samples/yeah.mp3"></source>
+            <source src="samples/yeah.ogg"></source>
+            <source src="samples/yeah.wav"></source>
+        </audio>
+    </div>
+
+    <div id="twe" class="sound-box">
+        <audio id="dAudio">
+            <source src="samples/twe.mp3"></source>
+            <source src="samples/twe.ogg"></source>
+            <source src="samples/twe.wav"></source>
+        </audio>
+    </div>
+
+    <div id="bygi" class="sound-box">
+        <audio id="eAudio">
+            <source src="samples/bygi.mp3"></source>
+            <source src="samples/bygi.ogg"></source>
+            <source src="samples/bygi.wav"></source>
+        </audio>
+    </div>
+
+    <div id="hagay" class="sound-box">
+        <audio id="fAudio">
+            <source src="samples/hagay.mp3"></source>
+            <source src="samples/hagay.ogg"></source>
+            <source src="samples/hagay.wav"></source>
+        </audio>
+    </div>
+
+    <div id="spiderslap" class="sound-box">
+        <audio id="gAudio">
+            <source src="samples/spiderslap.mp3"></source>
+            <source src="samples/spiderslap.ogg"></source>
+            <source src="samples/spiderslap.wav"></source>
+        </audio>
+    </div>
+
+    <div id="laatc" class="sound-box">
+        <video id="aAudio">
+            <source src="samples/laatc.mp4"></source>
+        </video>
+    </div>
+
+    <div id="gtfo" class="sound-box">
+        <video id="bAudio">
+            <source src="samples/gtfo.mp4"></source>
+        </video>
+    </div>
+</div>
+
+<!-- second row -->
+
+<div id="sound-bar2">
+    <div id="dwtsd" class="sound-box">
+        <video id="dwtsdAudio">
+            <source src="samples/dwtsd.mp4"></source>
+        </video>
+    </div>
+</div>
+
+</body>
+
+
+<script>
+    $(document).ready(function(){
+        
+        var cNote = document.getElementById('cAudio');
+        $(window).keypress(function(e){
+            var key = e.keyCode;
+            if (key === 49) {
+            cNote.currentTime = 0;
+            cNote.play();
+            }
+        });
+        
+        $('#yeah').mousedown(function(){
+            cNote.currentTime = 0;
+            cNote.play();
+        });
+        
+        
+        
+        var dNote = document.getElementById('dAudio');
+        $(window).keypress(function(e){
+            var key = e.keyCode;
+            if (key === 50) {
+                dNote.currentTime = 0;
+                dNote.play();
+            }
+        });
+        
+        $('#twe').mousedown(function(){
+            dNote.currentTime = 0;
+            dNote.play();
+        });
+        
+        var eNote = document.getElementById('eAudio');
+        $(window).keypress(function(e) {
+            var key = e.keyCode;
+            if(key === 51) {
+                eNote.currentTime = 0;
+                eNote.play();
+            }
+        });
+        $('#bygi').mousedown(function(){
+            eNote.currentTime = 0;
+            eNote.play();
+        });
+        
+        var fNote = document.getElementById('fAudio');
+        $(window).keypress(function(e) {
+            var key = e.keyCode;
+            if (key === 52) {
+                fNote.currentTime = 0;
+                fNote.play();
+            }
+        });
+        $('#hagay').mousedown(function(){
+            fNote.currentTime = 0;
+            fNote.play();
+        });
+        
+        var gNote = document.getElementById('gAudio');
+        $(window).keypress(function(e) {
+            var key = e.keyCode;
+            if (key === 53) {
+                gNote.currentTime = 0;
+                gNote.play();
+            }
+        });
+        $('#spiderslap').mousedown(function(){
+            gNote.currentTime = 0;
+            gNote.play();
+        });
+        
+        var aNote = document.getElementById('aAudio');
+        $(window).keypress(function(e) {
+            var key = e.keyCode;
+            if (key === 54) {
+                aNote.currentTime = 0;
+                aNote.play();
+            }
+        });
+        $('#laatc').mousedown(function(){
+            aNote.currentTime = 0;
+            aNote.play();
+        });
+        
+        var bNote = document.getElementById('bAudio');
+        $(window).keypress(function(e) {
+            var key = e.keyCode;
+            if (key === 55) {
+                bNote.currentTime = 0;
+                bNote.play();
+            }
+        });
+        $('#gtfo').mousedown(function(){
+            bNote.currentTime = 0;
+            bNote.play();
+        });
+        
+        var hNote = document.getElementById('dwtsdAudio');
+        $(window).keypress(function(e) {
+            var key = e.keyCode;
+            if (key === 97) {
+                hNote.currentTime = 0;
+                hNote.play();
+            }
+        });
+        $('#dwtsd').mousedown(function(){
+            hNote.currentTime = 0;
+            hNote.play();
+        });
+        
+    });
+</script>
+</html>
